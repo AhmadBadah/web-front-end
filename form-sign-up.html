@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>انشئ حساب</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+
+    <link rel="stylesheet" href="./assets/css/form-sign-up.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body dir="rtl" class="text-right">
+    <section class="container-fluid">
+      <div class="row full-page">
+        <div class="col-12 col-sm-6 order-2 order-sm-1 right-section">
+          <div class="data-input">
+            <div class="row w-100">
+              <div class="form-group col-lg-6">
+                <label>اسم المستخدم</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="محمد أحمد"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <label>الاسم</label>
+                <input
+                  type="text"
+                  class="form-control input mx-2 py-4 px-0"
+                  id="user-name"
+                  placeholder="محمد أحمد"
+                />
+              </div>
+            </div>
+            <div class="email-input-container w-100">
+              <label>البريد الإلكتروني</label>
+              <input
+                type="text"
+                class="form-control input w-100 py-4 px-0"
+                id="user-name"
+                placeholder="moh.ah@gmail.com"
+              />
+            </div>
+            <!-- select 2js -->
+            <div class="d-flex justify-content-between w-100">
+              <label class="align-self-start px-3">الجوال</label>
+              <label class="align-self-start px-3 w-50">المدينة</label>
+            </div>
+            <div class="d-flex justify-content-around w-100">
+              <select
+                id="mobile"
+                class="form-control h-25 px-3 select2"
+                name="mobile"
+                style="width: 100%;"
+              >
+                <option>577 566 66</option>
+                <option>566 665 77</option>
+                <option>577 555 66</option>
+                <option>555 666 77</option>
+              </select>
+              <select
+                id="first-num"
+                class="form-control h-25 px-3 select2"
+                name="first-num"
+                style="width: 100%;"
+              >
+                <option>‎+ 966</option>
+                <option>+972</option>
+                <option>+970</option>
+                <option>+960</option>
+                <option>+222</option>
+              </select>
+              <select
+                id="city"
+                class="form-control h-25 px-3 select2"
+                name="city"
+                style="width: 100%;"
+              >
+                <option>كل المدن</option>
+                <option>السعودية</option>
+                <option>الامارات</option>
+                <option>امريكا</option>
+                <option>دبي</option>
+              </select>
+            </div>
+            <!-- select 2js -->
+            <div class="how-did-know-us w-100">
+              <label>كيف عرفت ديل</label>
+              <select name="know-us" id="social" class="know-us w-100 select2">
+                <option value="facebook">فيسبوك</option>
+                <option value="instagram">انستا</option>
+                <option value="whatsapp">واتساب</option>
+                <option value="twitter">تويتر</option>
+                <option value="telegram">تلغرام</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <label>كلمة المرور</label>
+                <input
+                  type="password"
+                  class="form-control input py-4 px-0"
+                  id="user-name"
+                  placeholder="*****"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <label>تاكيد كلمة المرور</label>
+                <input
+                  type="password"
+                  class="form-control input py-4 px-0"
+                  id="user-name"
+                  placeholder="*****"
+                />
+              </div>
+              <p class="mx-3">كلمه المرور يجب ان تحتوى على ارقام وحروف</p>
+              <div class="radios mx-3 w-100">
+                <h6>التفعيل عن طريق</h6>
+                <div class="radios-buttons">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="mobile"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="mobile"
+                      >الجوال</label
+                    >
+                  </div>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio mx-3">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="email"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="email"
+                      >البريد الإلكتروني</label
+                    >
+                  </div>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      id="WP"
+                      name="defaultExampleRadios"
+                    />
+                    <label class="custom-control-label" for="WP"
+                      >الواتساب</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="row checkbox">
+                    <input
+                      class="mx-2"
+                      type="checkbox"
+                      id="agree"
+                      name="agreement-terms"
+                      value="terms"
+                    />
+                    <label class="checkbox-text" for="agree"
+                      >اوفق على
+                      <span class="terms-text mx-1"
+                        >الشروط والاحكام</span
+                      ></label
+                    ><br />
+                  </div>
+                  <div class="row checkbox">
+                    <input
+                      class="mx-2"
+                      type="checkbox"
+                      id="agree-messeges"
+                      name="messeges"
+                      value="msg"
+                    />
+                    <label class="checkbox-text2" for="agree-messeges"
+                      ><small>اوافق على ارسال الرسائل الترويجية</small></label
+                    ><br />
+                  </div>
+                </div>
+                <button class="activation-button py-3 w-50 align-self-center">
+                  إنشاء
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 order-1 order-sm-2 left-section">
+          <img class="back" src="assets/images/back.png" />
+          <img class="sign-up" src="assets/images/sign-up.png" />
+          <h2 class="did-you-forget-password">انشاء حساب جديد</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2();
+
+        $('b[role="presentation"]').hide();
+
+        $(".select2-selection__arrow").append(
+          '<i class="fa fa-angle-down"></i>'
+        );
+      })
+    </script>
+  </body>
+</html>

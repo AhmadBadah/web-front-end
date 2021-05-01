@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>الصفحة الشخصية</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+
+    <link rel="stylesheet" href="./assets/css/profile.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </head>
+
+  <body dir="rtl">
+    <section class="container-fluid">
+      <div class="row">
+        <div class="profile-head">
+          <div class="d-flex site-page px-5">
+            <p class="title">الملف الشخصي</p>
+            <a type="button" data-toggle="modal" data-target="#report">
+              <i class="fas fa-flag flag"></i>
+            </a>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <div class="user-details">
+              <div class="img-fluid">
+                <p class="profile-title-with-image mt-2">الملف الشخصي</p>
+                <img src="assets/images/profile-pic.png" />
+              </div>
+              <div class="admin-and-flag align-items-baseline">
+                <h3 class="admin">admin</h3>
+                <a type="button" data-toggle="modal" data-target="#report">
+                  <i class="fas fa-flag flag"></i>
+                </a>
+              </div>
+              <div>
+                <i
+                  class="fas fa-star the-star"
+                  style="font-size: 24px; color: #ffc107;"
+                ></i>
+                <i
+                  class="fas fa-star the-star"
+                  style="font-size: 24px; color: #ffc107;"
+                ></i>
+                <i
+                  class="fas fa-star the-star"
+                  style="font-size: 24px; color: #ffc107;"
+                ></i>
+                <i
+                  class="fas fa-star the-star"
+                  style="font-size: 24px; color: #ffffff;"
+                ></i>
+                <i
+                  class="fas fa-star the-star"
+                  style="font-size: 24px; color: #ffffff;"
+                ></i>
+              </div>
+              <div class="details my-4">
+                <a
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <h6 class="followers">متابع: 26</h6>
+                </a>
+                <h6 class="phone">الجوال: 0561180088</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    style="width: 100%; text-align: center;"
+                    id="exampleModalLongTitle"
+                  >
+                    المتابعين
+                  </h5>
+                  <button
+                    type="button"
+                    style="position: absolute; left: 10px;"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <section class="container-fluid">
+                    <div class="followers">
+                      <div class="one-follower">
+                        <img
+                          style="height: 55px; width: 55px;"
+                          src="assets/images/profile-pic.png"
+                        />
+                        <div class="row justify-content-between w-100 mx-2">
+                          <div>
+                            <p style="text-align: right;">محمداحمد</p>
+                            <p style="text-align: right;">
+                              <small>@moh20</small>
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary rounded-pill h-50 align-self-center px-3"
+                          >
+                            متابع
+                          </button>
+                          <!-- <hr/> -->
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="one-follower">
+                        <img
+                          style="height: 55px; width: 55px;"
+                          src="assets/images/profile-pic.png"
+                        />
+                        <div class="row justify-content-between w-100 mx-2">
+                          <div>
+                            <p style="text-align: right;">محمداحمد</p>
+                            <p style="text-align: right;">
+                              <small>@moh20</small>
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary rounded-pill h-50 align-self-center px-3"
+                          >
+                            متابع
+                          </button>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="one-follower">
+                        <img
+                          style="height: 55px; width: 55px;"
+                          src="assets/images/profile-pic.png"
+                        />
+                        <div class="row justify-content-between w-100 mx-2">
+                          <div>
+                            <p style="text-align: right;">محمداحمد</p>
+                            <p style="text-align: right;">
+                              <small>@moh20</small>
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary rounded-pill h-50 align-self-center px-3"
+                          >
+                            متابع
+                          </button>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="button-groups mx-auto w-75">
+            <button id="my-ad" class="btn btn-primary the-button w-100 py-3">
+              إعلاناتي
+            </button>
+            <button
+              id="my-fav-ad"
+              class="my-ad btn btn-primary the-button w-100 py-3"
+            >
+              الإعلانات المفضلة
+            </button>
+            <button id="chat" class="btn btn-primary the-button w-100 py-3">
+              الرسائل الخاصة
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row justify-content-center m-0">
+        <h3 class="result d-none py-5">
+          لا يوجد اعلانات لك حتى الان .. ضف اول اعلان لك واحصل على 1000 نقطة من
+          أمر ديل
+        </h3>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="cardModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="#cardModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="border-bottom: none;">
+                <h5
+                  class="modal-title"
+                  style="width: 100%; text-align: center;"
+                  id="exampleModalLongTitle"
+                >
+                  بيانات مقدم الطلب
+                </h5>
+                <button
+                  type="button"
+                  style="position: absolute; left: 10px;"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <section class="container-fluid">
+                  <div class="row justify-content-around">
+                    <p class="modal-card-title my-1">
+                      <strong>اسم المحول</strong>
+                    </p>
+                    <input
+                      type="email"
+                      class="form-control w-75 rounded-pill"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="أضف هنا اسمك المدرج في الحوالة البنكية"
+                    />
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title" style="text-align: right;">
+                      <strong>الاسم</strong>
+                    </p>
+                    <p
+                      class="w-50 modal-card-description"
+                      style="text-align: right;"
+                    >
+                      admin
+                    </p>
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title">
+                      <strong>الجوال</strong>
+                    </p>
+                    <p class="w-50 modal-card-description">
+                      0561180088
+                    </p>
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title">
+                      <strong>البريد</strong>
+                    </p>
+                    <p class="w-50 modal-card-description">
+                      admin@admin.com
+                    </p>
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title">
+                      <strong>كود الاعلان :</strong>
+                    </p>
+                    <p class="w-50 modal-card-description">
+                      #54852335
+                    </p>
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title">
+                      <strong>يمة العمولة: </strong>
+                    </p>
+                    <p class="w-50 modal-card-description">
+                      5
+                    </p>
+                  </div>
+                  <div class="column mx-n2">
+                    <p class="modal-card-title my-1">
+                      <strong>المرفقات</strong>
+                    </p>
+                    <input class="w-100" type="file" />
+                  </div>
+                  <p class="modal-card-description">
+                    <small
+                      >صيغة المرفقات يجب ان تكون jpeg,png,jpg,gif,svg,pdf
+                    </small>
+                  </p>
+                  <div
+                    class="modal-footer"
+                    style="
+                      border-top: none;
+                      display: flex;
+                      justify-content: end;
+                    "
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary rounded-pill px-4"
+                    >
+                      إرسال
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="report"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="#cardModal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="border-bottom: none;">
+                <h5
+                  class="modal-title"
+                  style="width: 100%; text-align: center;"
+                  id="exampleModalLongTitle"
+                >
+                  التبليغ عن اساءة
+                </h5>
+                <button
+                  type="button"
+                  style="position: absolute; left: 10px;"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <section class="container-fluid">
+                  <div class="row px-2 my-1 justify-content-between">
+                    <p class="modal-card-title my-1">
+                      <strong>عنوان السكن:</strong>
+                    </p>
+                    <input
+                      type="email"
+                      class="form-control w-75 rounded-pill"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="اكتب هنا مكان السكن"
+                    />
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title" style="text-align: right;">
+                      <strong>نوع الاساءة:</strong>
+                    </p>
+                    <input
+                      type="text"
+                      class="form-control w-75 rounded-pill"
+                      id="reportType"
+                      aria-describedby="emailHelp"
+                      placeholder="اكتب هنا نوع الاساءة"
+                    />
+                  </div>
+                  <div class="row px-2 my-1">
+                    <p class="w-25 modal-card-title">
+                      <strong>اضافة تعليق</strong>
+                    </p>
+                    <textarea
+                      class="form-control w-75 rounded-lg"
+                      placeholder="اضافة تعليق...."
+                    ></textarea>
+                  </div>
+                  <div
+                    class="modal-footer"
+                    style="
+                      border-top: none;
+                      display: flex;
+                      justify-content: flex-end;
+                    "
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary rounded-pill px-4"
+                    >
+                      إرسال
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="ad-cards" class="row site-page-card justify-content-center">
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
+                </div>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button
+                  onclick="deleteAlert()"
+                  type="button"
+                  class="btn btn-outline-info"
+                >
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
+                </div>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button
+                  onclick="deleteAlert()"
+                  type="button"
+                  class="btn btn-outline-info"
+                >
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
+                </div>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button
+                  onclick="deleteAlert()"
+                  type="button"
+                  class="btn btn-outline-info"
+                >
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
+            <div class="card">
+              <div
+                class="head-card bg-card1 align-items-end d-flex head-card justify-content-end"
+              ></div>
+              <div class="body-card px-3">
+                <div class="d-flex justify-content-between mt-3">
+                  <h6>ملابس تركية أطفال لطلبات</h6>
+                  <div class="love-icon-card mt-2">
+                    <button>
+                      <i class="far fa-heart mt-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex body-card-icon">
+                  <div class="d-flex ml-4 align-items-center">
+                    <i class="far fa-user ml-2"></i>
+                    <p>محمد أحمد</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt ml-2"></i>
+                    <p>الرياض</p>
+                  </div>
+                </div>
+                <p class="mt-3 content-card-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو وصف، نصي
+                  شكلي لملئ الفراغات غير مقروء بالضرورة
+                </p>
+                <h5>$50.00</h5>
+                <div class="footer-card d-flex justify-content-between my-3">
+                  <div class="d-flex">
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star ml-2 full-star star-icon"></i>
+                    <i class="fas fa-star empty-star star-icon"></i>
+                  </div>
+                  <div class="d-flex time-publish align-items-center">
+                    <i class="far fa-clock"></i>
+                    <p class="mr-1">منذ اسبوع</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2 py-1 button-group">
+                <button type="button" class="btn btn-outline-info">
+                  <a type="button" data-toggle="modal" data-target="#cardModal">
+                    <div class="row inside-button px-2">
+                      <i class="far fa-edit" style="font-size: 15px;"></i>
+                      <p class="my-0 mx-1" style="font-size: 15px;">
+                        تعديل
+                      </p>
+                    </div>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      دفع العمولة
+                    </p>
+                  </div>
+                </button>
+                <button
+                  onclick="deleteAlert()"
+                  type="button"
+                  class="btn btn-outline-info"
+                >
+                  <div class="row inside-button px-2">
+                    <i class="fas fa-trash" style="color: #ef5252;"></i>
+                    <p class="my-0 mx-1" style="font-size: 15px;">
+                      حذف
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid chat-for-admin d-none">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- Search bar -->
+          <div class="input-group my-4 w-100 mb-3">
+            <input class="form-control input" placeholder="ابحث..." />
+            <div class="input-group-prepend">
+              <span class="input-group-text search-btn" id="basic-addon1">
+                <i class="fas fa-search" style="color: #707070;"></i>
+              </span>
+            </div>
+          </div>
+          <!-- Search bar -->
+          <!-- right section for users -->
+          <div class="right-section">
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">محمد احمد</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">صهيب انس</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">انس صهيب</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">كمال محمود</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">انس صهيب</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">عبير انس</p>
+                <p class="messege">اعطيني تفاصيل اكتر</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+            <div class="card-messege">
+              <img class="card-image" src="assets/images/profile-pic.png" />
+              <div class="card-chat-details">
+                <p class="name">ايمان كامل</p>
+                <p class="messege">اعطيني تفاصيل</p>
+              </div>
+              <p class="date">12:30</p>
+            </div>
+            <hr />
+          </div>
+          <!-- right section for users -->
+        </div>
+        <!-- left section for messeges-->
+        <div class="my-5 col-lg-9">
+          <!-- dropdownList-user -->
+          <div class="dropdown user-list-on-mobile justify-content-center">
+            <button
+              class="btn btn-secondary dropdown-toggle w-50"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+            <div class="ml-3 align-items-center d-flex flex-1">
+              <i class="fas fa-list-ul" style="color: #fff; font-size: 15px;"></i>
+              <p style="margin-bottom: 0; margin-right: 0.7rem;">الدردشات</p>
+            </div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="max-height: 50vh;overflow-y: auto;">
+              <a class="dropdown-item" href="#">
+                <div class="card-messege">
+                  <img class="card-image" src="assets/images/profile-pic.png" />
+                  <div class="card-chat-details">
+                    <p class="name">محمد احمد</p>
+                    <p class="messege">اعطيني تفاصيل اكتر</p>
+                  </div>
+                  <p class="date">12:30</p>
+                </div>
+                <hr />
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="card-messege">
+                  <img class="card-image" src="assets/images/profile-pic.png" />
+                  <div class="card-chat-details">
+                    <p class="name">محمد احمد</p>
+                    <p class="messege">اعطيني تفاصيل اكتر</p>
+                  </div>
+                  <p class="date">12:30</p>
+                </div>
+                <hr />
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="card-messege">
+                  <img class="card-image" src="assets/images/profile-pic.png" />
+                  <div class="card-chat-details">
+                    <p class="name">محمد احمد</p>
+                    <p class="messege">اعطيني تفاصيل اكتر</p>
+                  </div>
+                  <p class="date">12:30</p>
+                </div>
+                <hr />
+              </a>
+              <a class="dropdown-item" href="#">
+                <div class="card-messege">
+                  <img class="card-image" src="assets/images/profile-pic.png" />
+                  <div class="card-chat-details">
+                    <p class="name">محمد احمد</p>
+                    <p class="messege">اعطيني تفاصيل اكتر</p>
+                  </div>
+                  <p class="date">12:30</p>
+                </div>
+                <hr />
+              </a>
+            </div>
+          </div>
+          <!-- dropdownList-user -->
+          <div style="max-height: 70vh; overflow-y: auto;">
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <img src="assets/images/you're_beautiful.png" />
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png" />
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png" />
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png" />
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+            <div class="first-user col-lg-12">
+              <div class="messeges">
+                <p class="messege-date px-2">12:30</p>
+                <img src="assets/images/hi_white.png" />
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+              </div>
+            </div>
+            <div class="second-user col-lg-12">
+              <div class="messeges">
+                <img
+                  class="user-image mx-3"
+                  src="assets/images/profile-pic.png"
+                />
+                <p class="messege-body px-3 py-2">
+                  :) مرحبا هل بامكاني سؤال عن المنتج
+                </p>
+                <p class="messege-date px-2">12:30</p>
+              </div>
+            </div>
+          </div>
+          <!-- send input -->
+          <div class="messeges-box">
+            <div class="input-group my-4 w-100 mb-3">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text rounded-0 plus"
+                  id="basic-addon1"
+                  style="background-color: #fff; border-left-color: #fff;"
+                >
+                  <i class="fas fa-plus-circle" style="font-size: 24px;"></i>
+                </span>
+              </div>
+              <input
+                class="form-control rounded-0 send-input py-4"
+                placeholder="اكتب شيئا..."
+                style="border-left-color: #fff; border-right-color: #fff;"
+              />
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text send"
+                  id="basic-addon1"
+                  style="background-color: #fff;"
+                >
+                  <i class="fas fa-paper-plane" style="color: #707070;"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- send input -->
+        </div>
+        <!-- left section for messeges -->
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#my-ad").click(function () {
+          $("#ad-cards").removeClass("d-none");
+          $(".result").addClass("d-none");
+          $(".chat-for-admin").addClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+        $("#my-fav-ad").click(function () {
+          $("#ad-cards").addClass("d-none");
+          $(".chat-for-admin").addClass("d-none");
+          $(".result").removeClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+        $("#chat").click(function () {
+          $(".chat-for-admin").removeClass("d-none");
+          $(".result").addClass("d-none");
+          $("#ad-cards").addClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+      });
+    </script>
+    <script src="./assets/js/nav-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function deleteAlert() {
+        swal({
+          title: "هل انت متأكد تريد الحذف؟",
+          text: "سيتم حذف المنتج",
+          icon: "warning",
+          dangerMode: true,
+          buttons: {
+            cancel: {
+              text: "الغاء",
+              value: null,
+              visible: true,
+              className: "",
+              closeModal: true,
+            },
+            confirm: {
+              text: "حذف",
+              value: true,
+              visible: true,
+              className: "",
+              closeModal: true,
+            },
+          },
+        }).then((willDelete) => {
+          if (willDelete) {
+            swal({
+              title: "تم الحذف",
+              text: "تم حذف المنتج",
+              icon: "success",
+              button: "تم",
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

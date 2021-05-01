@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>تفاصيل الاعلان</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="jquery-1.12.4.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+    <link rel="stylesheet" href="./assets/css/create-ad.css" />
+
+    <link rel="stylesheet" href="./assets/css/home-details.css" />
+  </head>
+
+  <body dir="rtl" class="text-right">
+    <section class="container site-page px-3">
+      <div class="row">
+        <div class="col-lg-9 order-lg-2 order-sm-1">
+          <div class="owl-carousel owl-theme">
+            <div>
+              <img
+                class="owl-lazy item"
+                data-src="assets/images/image-card.png"
+                style="border-radius: 20px;"
+                alt=""
+              />
+              <div class="love-icon-card for-slider mt-2">
+                <button id="toggole-shear-btn">
+                  <i class="far fa-heart mt-1"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                class="owl-lazy item"
+                data-src="assets/images/poster.png"
+                style="border-radius: 20px;"
+                alt=""
+              />
+              <div class="love-icon-card for-slider mt-2">
+                <button>
+                  <i class="far fa-heart mt-1"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                class="owl-lazy item"
+                data-src="assets/images/image-card.png"
+                style="border-radius: 20px;"
+                alt=""
+              />
+              <div class="love-icon-card for-slider mt-2">
+                <button>
+                  <i class="far fa-heart mt-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="https://web.whatsapp.com/">
+              <i class="fab fa-whatsapp px-2" style="font-size: 30px;"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter px-2" style="font-size: 30px;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 order-lg-1 order-sm-2">
+          <h3>سيارة مرسيدس موديل 2020 بحالة ممتازة للإيجار</h3>
+          <p class="costs">مبلغ الإيجار:<small> 329,990.00 ريال</small></p>
+          <p class="costs">
+            مبلغ التأمين:<small> لم يتم تحديد مبلغ تأمين</small>
+          </p>
+          <div class="above-card">
+            <p class="costs"><strong>تواصل مع المؤجر</strong></p>
+            <i class="fas fa-flag flag"></i>
+          </div>
+          <div class="card">
+            <div class="card-content my-2">
+              <img class="image" src="assets/images/profile-pic.png" />
+              <div class="card-text mx-1">
+                <p>الاسم <small>شركة محمد أحمد</small></p>
+                <p>مدينة الاعلان <small>الرياض</small></p>
+                <p>رقم الجوال<small>0128076223</small></p>
+              </div>
+            </div>
+            <div class="card-buttons mx-1 my-2">
+              <button type="button" class="btn btn-primary px-3 py-2">
+                رسالة خاصّة
+              </button>
+              <button type="button" class="btn btn-light px-5 py-2">
+                تابع
+              </button>
+            </div>
+          </div>
+          <div class="my-2">
+            <h6 style="text-align: right; color: #707070;">
+              موقع الإعلان على الخريطة
+            </h6>
+            <!-- google map -->
+            <div class="map-area fix">
+              <div class="rounded-lg" id="map"></div>
+            </div>
+            <!-- google map -->
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="rate-buttons my-5">
+          <button
+            id="ad-description"
+            type="button"
+            class="btn btn-light the-button px-4 py-2"
+          >
+            وصف الاعلان
+          </button>
+          <button
+            id="comments"
+            type="button"
+            class="btn btn-light the-button px-4 mx-2"
+          >
+            تعلقيات
+          </button>
+          <button
+            id="terms-for-ad"
+            type="button"
+            class="btn btn-light the-button"
+          >
+            الشروط الخاصة للاعلان
+          </button>
+        </div>
+        <div class="description-for-sale">
+          <div class="button-result">
+            <div class="rates d-none">
+              <p class="rate-text pb-5">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي
+                أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+                الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+              <div class="card">
+                <div class="rating-box">
+                  <div>
+                    <i
+                      class="fas fa-star"
+                      style="text-align: right; font-size: 24px;"
+                    ></i>
+                  </div>
+                  <div>
+                    <h6 style="text-align: center; color: #8e8f94;">4.0</h6>
+                    <p style="text-align: center; color: #8e8f94;">
+                      <small>1.38M Ratings</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="first-section px-4 my-4">
+                  <h6 class="add-rate"><strong>أضف تقييم</strong></h6>
+                  <div>
+                    <i class="fas fa-star" style="color: #929292;"></i>
+                    <i class="fas fa-star" style="color: #929292;"></i>
+                    <i class="fas fa-star" style="color: #929292;"></i>
+                    <i class="fas fa-star" style="color: #929292;"></i>
+                    <i class="fas fa-star" style="color: #929292;"></i>
+                  </div>
+                </div>
+                <textarea
+                  class="text-area"
+                  placeholder="علق بما تراه مناسبا...."
+                ></textarea>
+                <div class="card-send-rate mx-4 my-4">
+                  <button type="button" class="btn btn-warning px-4 py-2">
+                    إرسال
+                  </button>
+                </div>
+              </div>
+              <h4 class="same-Advertisement">اعلانات مشابهة</h4>
+            </div>
+            <div class="comment-section d-none">
+              <div class="row comments px-4">
+                <div class="image-container">
+                  <img
+                    style="height: 55px; width: 55px;"
+                    src="assets/images/profile-pic.png"
+                  />
+                </div>
+                <div class="mx-2">
+                  <h6 class="name">محمد احمد</h6>
+                  <p><small>3 يونيو 2020</small></p>
+                </div>
+                <p class="px-4">
+                  <small>
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع
+                  </small>
+                </p>
+                <div class="forword align-self-center">
+                  <button type="button" class="btn btn-outline-secondary">
+                    رد<i class="fas fa-share"></i>
+                  </button>
+                  <i class="fas fa-flag"></i>
+                </div>
+              </div>
+              <div class="add-new-comment">
+                <div class="first-section px-4 my-4">
+                  <h6 class="add-rate"><strong>أضف تعليق</strong></h6>
+                </div>
+                <textarea
+                  class="text-area"
+                  placeholder="علق بما تراه مناسبا...."
+                ></textarea>
+                <div class="card-send-rate mx-4 my-4">
+                  <button type="button" class="btn btn-warning px-4 py-2">
+                    إرسال
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="terms-for-sales d-none">
+              <p class="text-right">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي
+                أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+                الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+            </div>
+            <div class="row">
+              <div class="columns col-12 col-xl-3 col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                  <div class="content-card">
+                    <div
+                      style="
+                        background-image: url('assets/images/bg-card-home2.svg');
+                      "
+                      class="head-card align-items-end d-flex justify-content-end"
+                    >
+                      <a
+                        href="#"
+                        class="w-100 h-100 align-items-end d-flex justify-content-end"
+                      >
+                      </a>
+                    </div>
+                    <div class="body-card px-3">
+                      <div class="d-flex justify-content-between mt-3">
+                        <a href="#">
+                          <h6>ملابس تركية أطفال لطلبات</h6>
+                        </a>
+                        <div class="love-icon-card mt-2">
+                          <button>
+                            <i class="far fa-heart mt-1"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="d-flex body-card-icon">
+                        <div class="d-flex ml-4 align-items-center">
+                          <i class="far fa-user ml-2"></i>
+                          <a href="#">
+                            <p>محمد أحمد</p>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          <a href="#">
+                            <p>الرياض</p>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mt-3 content-card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو
+                        وصف، نصي شكلي لملئ الفراغات غير مقروء بالضرورة
+                      </p>
+                      <h5>$50.00</h5>
+                      <div
+                        class="footer-card d-flex justify-content-between my-3"
+                      >
+                        <div class="d-flex">
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star empty-star star-icon"></i>
+                        </div>
+                        <div class="d-flex time-publish align-items-center">
+                          <i class="far fa-clock"></i>
+                          <p class="mr-1">منذ اسبوع</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns col-12 col-xl-3 col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                  <div class="content-card">
+                    <div
+                      style="
+                        background-image: url('assets/images/bg-card-home2.svg');
+                      "
+                      class="head-card align-items-end d-flex head-card justify-content-end"
+                    >
+                      <a
+                        href="#"
+                        class="w-100 h-100 align-items-end d-flex justify-content-end"
+                      >
+                      </a>
+                    </div>
+                    <div class="body-card px-3">
+                      <div class="d-flex justify-content-between mt-3">
+                        <a href="#">
+                          <h6>ملابس تركية أطفال لطلبات</h6>
+                        </a>
+                        <div class="love-icon-card mt-2">
+                          <button>
+                            <i class="far fa-heart mt-1"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="d-flex body-card-icon">
+                        <div class="d-flex ml-4 align-items-center">
+                          <i class="far fa-user ml-2"></i>
+                          <a href="#">
+                            <p>محمد أحمد</p>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          <a href="#">
+                            <p>الرياض</p>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mt-3 content-card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو
+                        وصف، نصي شكلي لملئ الفراغات غير مقروء بالضرورة
+                      </p>
+                      <h5>$50.00</h5>
+                      <div
+                        class="footer-card d-flex justify-content-between my-3"
+                      >
+                        <div class="d-flex">
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star empty-star star-icon"></i>
+                        </div>
+                        <div class="d-flex time-publish align-items-center">
+                          <i class="far fa-clock"></i>
+                          <p class="mr-1">منذ اسبوع</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns col-12 col-xl-3 col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                  <div class="content-card">
+                    <div
+                      style="
+                        background-image: url('assets/images/bg-card-home2.svg');
+                      "
+                      class="head-card align-items-end d-flex head-card justify-content-end"
+                    >
+                      <a
+                        href="#"
+                        class="w-100 h-100 align-items-end d-flex justify-content-end"
+                      >
+                      </a>
+                    </div>
+                    <div class="body-card px-3">
+                      <div class="d-flex justify-content-between mt-3">
+                        <a href="#">
+                          <h6>ملابس تركية أطفال لطلبات</h6>
+                        </a>
+                        <div class="love-icon-card mt-2">
+                          <button>
+                            <i class="far fa-heart mt-1"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="d-flex body-card-icon">
+                        <div class="d-flex ml-4 align-items-center">
+                          <i class="far fa-user ml-2"></i>
+                          <a href="#">
+                            <p>محمد أحمد</p>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          <a href="#">
+                            <p>الرياض</p>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mt-3 content-card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو
+                        وصف، نصي شكلي لملئ الفراغات غير مقروء بالضرورة
+                      </p>
+                      <h5>$50.00</h5>
+                      <div
+                        class="footer-card d-flex justify-content-between my-3"
+                      >
+                        <div class="d-flex">
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star empty-star star-icon"></i>
+                        </div>
+                        <div class="d-flex time-publish align-items-center">
+                          <i class="far fa-clock"></i>
+                          <p class="mr-1">منذ اسبوع</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns col-12 col-xl-3 col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                  <div class="content-card">
+                    <div
+                      style="
+                        background-image: url('assets/images/bg-card-home2.svg');
+                      "
+                      class="head-card align-items-end d-flex head-card justify-content-end"
+                    >
+                      <a
+                        href="#"
+                        class="w-100 h-100 align-items-end d-flex justify-content-end"
+                      >
+                      </a>
+                    </div>
+                    <div class="body-card px-3">
+                      <div class="d-flex justify-content-between mt-3">
+                        <a href="#">
+                          <h6>ملابس تركية أطفال لطلبات</h6>
+                        </a>
+                        <div class="love-icon-card mt-2">
+                          <button>
+                            <i class="far fa-heart mt-1"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="d-flex body-card-icon">
+                        <div class="d-flex ml-4 align-items-center">
+                          <i class="far fa-user ml-2"></i>
+                          <a href="#">
+                            <p>محمد أحمد</p>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          <a href="#">
+                            <p>الرياض</p>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mt-3 content-card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو
+                        وصف، نصي شكلي لملئ الفراغات غير مقروء بالضرورة
+                      </p>
+                      <h5>$50.00</h5>
+                      <div
+                        class="footer-card d-flex justify-content-between my-3"
+                      >
+                        <div class="d-flex">
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star empty-star star-icon"></i>
+                        </div>
+                        <div class="d-flex time-publish align-items-center">
+                          <i class="far fa-clock"></i>
+                          <p class="mr-1">منذ اسبوع</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns col-12 col-xl-3 col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                  <div class="content-card">
+                    <div
+                      style="
+                        background-image: url('assets/images/bg-home-card.svg');
+                      "
+                      class="head-card align-items-end d-flex head-card justify-content-end"
+                    >
+                      <a
+                        href="#"
+                        class="w-100 h-100 align-items-end d-flex justify-content-end"
+                      >
+                      </a>
+                    </div>
+                    <div class="body-card px-3">
+                      <div class="d-flex justify-content-between mt-3">
+                        <a href="#">
+                          <h6>ملابس تركية أطفال لطلبات</h6>
+                        </a>
+                        <div class="love-icon-card mt-2">
+                          <button>
+                            <i class="far fa-heart mt-1"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="d-flex body-card-icon">
+                        <div class="d-flex ml-4 align-items-center">
+                          <i class="far fa-user ml-2"></i>
+                          <a href="#">
+                            <p>محمد أحمد</p>
+                          </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="fas fa-map-marker-alt ml-2"></i>
+                          <a href="#">
+                            <p>الرياض</p>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mt-3 content-card-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدلهذا النص هو ، وهو
+                        وصف، نصي شكلي لملئ الفراغات غير مقروء بالضرورة
+                      </p>
+                      <h5>$50.00</h5>
+                      <div
+                        class="footer-card d-flex justify-content-between my-3"
+                      >
+                        <div class="d-flex">
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star ml-2 full-star star-icon"></i>
+                          <i class="fas fa-star empty-star star-icon"></i>
+                        </div>
+                        <div class="d-flex time-publish align-items-center">
+                          <i class="far fa-clock"></i>
+                          <p class="mr-1">منذ اسبوع</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/nav-footer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          rtl: true,
+          loop: true,
+          nav: true,
+          lazyLoad: true,
+          items: 1,
+          autoHeight: true,
+        });
+      });
+    </script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="assets/js/gmaps.js"></script>
+    <script>
+      var map = new GMaps({
+        el: "#map",
+        lat: -12.043333,
+        lng: -77.028333,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#ad-description").click(function () {
+          $(".terms-for-sales").addClass("d-none");
+          $(".comment-section").addClass("d-none");
+          $(".rates").removeClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+        $("#comments").click(function () {
+          $(".rates").addClass("d-none");
+          $(".terms-for-sales").addClass("d-none");
+          $(".comment-section").removeClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+        $("#terms-for-ad").click(function () {
+          $(".terms-for-sales").removeClass("d-none");
+          $(".result").addClass("d-none");
+          $(".comment-section").addClass("d-none");
+          $(this)
+            .removeClass("the-button")
+            .addClass("active-btn")
+            .siblings()
+            .addClass("the-button");
+        });
+      });
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/PlacePicker.js"></script>
+  </body>
+</html>
